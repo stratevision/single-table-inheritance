@@ -15,11 +15,11 @@ class SingleTableInheritanceScope implements Scope {
    * @return void
    */
   public function apply(Builder $builder, Model $model) {
-    $subclassTypes = array_keys($model->getSingleTableTypeMap());
+    //$subclassTypes = array_keys($model->getSingleTableTypeMap());
 
-    if (!empty($subclassTypes) ) {
-      $builder->whereIn($model->getQualifiedSingleTableTypeColumn(), $subclassTypes);
-    }
+    //if (!empty($subclassTypes) ) {
+    //  $builder->whereIn($model->getQualifiedSingleTableTypeColumn(), $subclassTypes);
+    //}
   }
 
   /**
